@@ -24,10 +24,13 @@ import com.paixao.dev.mobile_design_system.ui.theme.MobileDesignSystemTheme
  *  A card that's can exhibit a [Image] with a description [Text]. This can exhibit just with a
  *  background [Color] without a [Text]. Modify the **CardExhibition** class in case
  *  to change the default tokens.
+ *
+ *  version 1.0.0
  */
 @Composable
 fun CardExhibition(
     image: Painter? = null,
+    imageContentDescription: String = "",
     description: String = "",
     enabled: Boolean = true,
     cardWidth: Dp = 300.dp,
@@ -36,10 +39,11 @@ fun CardExhibition(
     disabledDescriptionTextColor: Color = MaterialTheme.colorScheme.tertiary,
     backgroundColor: Color = MaterialTheme.colorScheme.background,
     disabledColor: Color = MaterialTheme.colorScheme.surfaceVariant,
-    onClick: () -> Unit
+    onClick: () -> Unit = {}
 ) {
     CardExhibitionCompose(
         image = image,
+        imageContentDescription = imageContentDescription,
         descriptionText = description,
         width = cardWidth,
         height = cardHeight,
@@ -56,6 +60,7 @@ fun CardExhibition(
 @Composable
 private fun CardExhibitionCompose(
     image: Painter?,
+    imageContentDescription: String,
     descriptionText: String,
     cardEnabled: Boolean,
     width: Dp,
@@ -81,7 +86,7 @@ private fun CardExhibitionCompose(
             image?.let {
                 Image(
                     painter = image,
-                    contentDescription = "",
+                    contentDescription = imageContentDescription,
                     contentScale = ContentScale.Crop,
                     modifier = Modifier.fillMaxSize(),
                     alpha = if (cardEnabled) DefaultAlpha else 0.3f
@@ -107,6 +112,6 @@ private fun CardExhibitionPreview() {
     MobileDesignSystemTheme {
         CardExhibition(
             description = "Olá mundo"
-        ) {}
+        )
     }
 }
