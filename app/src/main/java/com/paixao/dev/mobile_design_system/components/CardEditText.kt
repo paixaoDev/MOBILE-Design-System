@@ -89,7 +89,7 @@ private fun EditTextWithPriority(
                 ) {
                     if (showHint) {
                         Text(
-                            text = hint.capitalize(locale = Locale.getDefault()),
+                            text = hint.replaceFirstChar { if (it.isLowerCase()) it.titlecase(locale = Locale.getDefault()) else it.toString() },
                             color = Color.Gray
                         )
                     }
