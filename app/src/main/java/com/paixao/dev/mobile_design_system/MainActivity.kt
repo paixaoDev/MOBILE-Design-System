@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.paixao.dev.mobile_design_system.components.CardEditText
 import com.paixao.dev.mobile_design_system.components.CardExhibition
 import com.paixao.dev.mobile_design_system.components.TitleSubTitle
 import com.paixao.dev.mobile_design_system.ui.theme.MobileDesignSystemTheme
@@ -31,6 +32,8 @@ class MainActivity : ComponentActivity() {
                         CardExhibition(backgroundColor = MaterialTheme.colorScheme.primary)
                         Spacer(modifier = Modifier.size(10.dp))
                         TitleSubTitle(title = "Olá mundo")
+                        Spacer(modifier = Modifier.size(10.dp))
+                        CardEditText()
                     }
                 }
             }
@@ -45,6 +48,7 @@ fun GreetingPreview() {
         Column {
             CardExhibition(backgroundColor = MaterialTheme.colorScheme.primary)
             TitleSubTitle(title = "Olá mundo")
+            CardEditText(hint = "teste")
         }
     }
 }
