@@ -46,14 +46,16 @@ fun CardEditText(
     enabled: Boolean = true,
     errorText: String = "",
     errorIcon: Painter? = null,
-    onChange: (String) -> Unit = {},
     cardColor: Color = MaterialTheme.colorScheme.background,
     disabledColor: Color = MaterialTheme.colorScheme.surfaceVariant,
     errorColor: Color = MaterialTheme.colorScheme.error,
     requiredColor: Color = MaterialTheme.colorScheme.onBackground,
     textColor: Color = MaterialTheme.colorScheme.onBackground,
     hintTextColor: Color = MaterialTheme.colorScheme.onBackground,
-    disabledTextColor: Color = MaterialTheme.colorScheme.onError
+    disabledTextColor: Color = MaterialTheme.colorScheme.onError,
+    visualTransformation: VisualTransformation = VisualTransformation.None,
+    keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
+    onChange: (String) -> Unit = {},
 ) {
     EditTextWithPriority(
         value = value,
@@ -64,14 +66,16 @@ fun CardEditText(
         hasError = error,
         errorText = errorText,
         errorIcon = errorIcon,
-        onChange = onChange,
         cardColor = cardColor,
         disabledColor = disabledColor,
         errorColor = errorColor,
         requiredColor = requiredColor,
         textColor = textColor,
         hintTextColor = hintTextColor,
-        disabledTextColor = disabledTextColor
+        disabledTextColor = disabledTextColor,
+        visualTransformation = visualTransformation,
+        keyboardOptions = keyboardOptions,
+        onChange = onChange
     )
 }
 
@@ -92,8 +96,8 @@ private fun EditTextWithPriority(
     textColor: Color,
     hintTextColor: Color,
     disabledTextColor: Color,
-    visualTransformation: VisualTransformation = VisualTransformation.None,
-    keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
+    visualTransformation: VisualTransformation,
+    keyboardOptions: KeyboardOptions,
     onChange: (String) -> Unit
 ) {
     var showHint by remember { mutableStateOf(value.isEmpty()) }
