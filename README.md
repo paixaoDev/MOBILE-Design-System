@@ -47,12 +47,12 @@ Atomic Design é uma metodologia desenvolvida em 2013 por Brad Frost, que faz um
 Tokens são como variáveis que são usadas para construir os componentes de um design system, eles podem ser cores, tamanhos entre diversos outros valores.
 Os tokens deste design system usam principalmente o [builder de temas do material design](https://material-foundation.github.io/material-theme-builder/), principalmente para manter a utilização das cores dinâmicas e para facilitar a criação de uma folha de temas com o builder do material design.
 
-Um exemplo da nossa folha de tokens pode ser encontrada [aqui](www.tokens)
+Um exemplo da nossa folha de tokens pode ser encontrada [aqui](https://github.com/paixaoDev/MOBILE-Design-System/wiki/Design-Tokens)
 
 ## Components?
 Componentes são partes de código reutilizáveis dentro do seu sistema e eles servem como blocos de construção de uma interface. Assim, um componente tem características como: reutilização, flexibilidade, consistência e modularidade.
 
-A lista de componentes pode ser encontrada na [documentação](www.doc], por lá temos os componentes já criados e os que pretendemos criar futuramente
+A lista de componentes pode ser encontrada na [documentação](https://github.com/paixaoDev/MOBILE-Design-System/wiki/Components), por lá temos os componentes já criados e os que pretendemos criar futuramente
 
 ## Disclamer
 Este repositorio foi feito como uma chance de aprender mais sobre compose e desenvolvimento de design system, é muito significativo comentarios construtivos para que possamos aprender juntos!
