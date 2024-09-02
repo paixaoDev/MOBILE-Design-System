@@ -4,26 +4,25 @@ Open Source MOBILE Design System repository writen in Compose
 ## How contribute?
 To contribute you need to create a **merge request(MR)** following the **delivery rules**, which will then be reviewed and merged! Don't know what could help? How about going to the **issue** page and picking one to solve?
 
-> It is important to understand a little about compose development and atomic design, as this design system follows this concept.
+> It is important to understand a little about compose development and atomic design, as this design system follows this concept. See the [CONTRIBUTING.mg](https://github.com/paixaoDev/MOBILE-Design-System/blob/main/CONTRIBUTING.md) for more details
    
 ## What is Atomic Design?
-Atomic Design é uma metodologia desenvolvida em 2013 por Brad Frost, que faz uma analogia com a química ao usar elementos como átomos, moléculas e organismos para criar design systems mais consistentes e padronizados dentro do desenvolvimento de uma interface.
+Atomic Design is a methodology developed in 2013 by Brad Frost, which makes an analogy with chemistry by using elements such as atoms, molecules and organisms to create more consistent and standardized design systems within the development of an interface.
 
 ## Design Tokens?
-Tokens são como variáveis que são usadas para construir os componentes de um design system, eles podem ser cores, tamanhos entre diversos outros valores.
-Os tokens deste design system usam principalmente o [builder de temas do material design](https://material-foundation.github.io/material-theme-builder/), principalmente para manter a utilização das cores dinâmicas e para facilitar a criação de uma folha de temas com o builder do material design.
+Tokens are like variables that are used to build the components of a design system, they can be colors, sizes, among many other values.
+The tokens of this design system mainly use the [material design theme builder](https://material-foundation.github.io/material-theme-builder/), mainly to maintain the use of dynamic colors and to facilitate the creation of a theme sheet with the material design builder.
 
-Um exemplo da nossa folha de tokens pode ser encontrada [aqui](https://github.com/paixaoDev/MOBILE-Design-System/wiki/Design-Tokens)
+An example of our token sheet can be found [here](https://github.com/paixaoDev/MOBILE-Design-System/wiki/Design-Tokens)
 
 ## Components?
-Componentes são partes de código reutilizáveis dentro do seu sistema e eles servem como blocos de construção de uma interface. Assim, um componente tem características como: reutilização, flexibilidade, consistência e modularidade.
+Components are reusable pieces of code within your system and they serve as building blocks of an interface. Thus, a component has characteristics such as: reusability, flexibility, consistency, and modularity.
 
-A lista de componentes pode ser encontrada na [documentação](https://github.com/paixaoDev/MOBILE-Design-System/wiki/Components), por lá temos os componentes já criados e os que pretendemos criar futuramente
+The list of components can be found in the [documentation](https://github.com/paixaoDev/MOBILE-Design-System/wiki/Components), there we have the components already created and those we intend to create in the future.
 
 ## Disclamer
-Este repositorio foi feito como uma chance de aprender mais sobre compose e desenvolvimento de design system, é muito significativo comentarios construtivos para que possamos aprender juntos!
+This repository was created as a chance to learn more about compose and design system development, constructive feedback is very important so we can learn together!
 
-É importante também entender como o compose funciona e não passar por cima da sua maior qualidade que é a facil customização, então os componentes aqui vão ser "mais abertos" do que podemos encontrar em outros design system, facilitando uma implementação no projeto e edição durante seu uso. Mesmo que isso possa fugir um pouco da regra da maioria dos design systens, não faz sentido engessar os componentes. Com isso qualquer forma de melhorar a dinamica dos itens pensando nesas premissa é super bem vinda.
+It is also important to understand how Compose works and not ignore its greatest quality, which is easy customization. Therefore, the components here will be "more open" than what we can find in other design systems, making it easier to implement in the project and edit during use. Even though this may deviate a little from the rule of most design systems, it does not make sense to restrict the components. Therefore, any way to improve the dynamics of the items considering these premises is very welcome.
 
-Espero que esse repositorio seja mais um motivo de incentivar o estudos que de que ela usado em seus projetos, vamos criar mais conteudos para compose e desenvolvimento android!
-
+I hope this repository is another reason to encourage the studies that it is used in your projects, let's create more content for compose and android development!
