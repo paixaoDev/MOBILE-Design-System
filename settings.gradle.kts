@@ -8,6 +8,7 @@ pluginManagement {
             }
         }
         mavenCentral()
+        mavenLocal()
         gradlePluginPortal()
     }
 }
@@ -23,4 +24,4 @@ dependencyResolutionManagement {
 rootProject.name = "Mobile Design System"
 include(":app")
 include(":mdscomponents")
-include(":mdstokens")
+include(":mdsfoundation")
