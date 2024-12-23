@@ -1,6 +1,7 @@
-package com.paixao.dev.mobile_design_system.ui.theme
+package com.paixao.dev.mdsfoundation.tokens
 
 import androidx.compose.ui.graphics.Color
+
 
 val primaryLight = Color(0xFF415F91)
 val onPrimaryLight = Color(0xFFFFFFFF)

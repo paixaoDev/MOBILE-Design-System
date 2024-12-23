@@ -1,7 +1,8 @@
-package com.paixao.dev.mobile_design_system.ui.theme
+package com.paixao.dev.mdsfoundation.tokens
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.font.FontFamily
+
 
 val bodyFontFamily = FontFamily.Default
 val displayFontFamily = FontFamily.Default

@@ -1,4 +1,4 @@
-package com.paixao.dev.mobile_design_system.components
+package com.paixao.dev.mds.components.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -19,7 +19,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.paixao.dev.mobile_design_system.ui.theme.MobileDesignSystemTheme
+import com.paixao.dev.mdsfoundation.theme.MobileDesignSystemTheme
 /**
  *  A card that's can exhibit a [Image] with a description [Text]. This can exhibit just with a
  *  background [Color] without a [Text]. Modify the **CardExhibition** class in case

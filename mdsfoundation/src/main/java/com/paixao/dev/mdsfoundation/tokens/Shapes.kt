@@ -1,8 +1,7 @@
-package com.paixao.dev.mobile_design_system.ui.theme
+package com.paixao.dev.mdsfoundation.tokens
 
 import androidx.compose.material3.ShapeDefaults
 import androidx.compose.material3.Shapes
-
 
 val designSystemShapes = Shapes(
     extraSmall = ShapeDefaults.ExtraSmall,

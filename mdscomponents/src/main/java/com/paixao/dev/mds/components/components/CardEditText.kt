@@ -1,5 +1,6 @@
-package com.paixao.dev.mobile_design_system.components
+package com.paixao.dev.mds.components.components
 
+import android.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.focusable
@@ -33,6 +34,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.paixao.dev.mdsfoundation.theme.MobileDesignSystemTheme
 
 import java.util.Locale
 
@@ -217,42 +219,43 @@ private fun EditTextWithPriority(
 @Preview(showBackground = true)
 @Composable
 private fun CardEditTextPreview() {
-    Column {
-        CardEditText(
-            hint = "normal card - hint",
-            description = "card description"
-        )
-        Spacer(modifier = Modifier.size(10.dp))
-        CardEditText(
-            hint = "disabled card - hint",
-            description = "card description",
-            enabled = false
-        )
-        Spacer(modifier = Modifier.size(10.dp))
-        CardEditText(
-            hint = "required card - hint",
-            description = "card description",
-            enabled = true,
-            required = true
-        )
-        Spacer(modifier = Modifier.size(10.dp))
-        CardEditText(
-            hint = "error card - hint",
-            description = "card description",
-            errorText = "you make a error here",
-            enabled = true,
-            error = true,
-        )
-        Spacer(modifier = Modifier.size(10.dp))
-        CardEditText(
-            hint = "required error card - hint",
-            description = "card description",
-            errorText = "you make a error here",
-            enabled = true,
-            error = true,
-            required = true,
-            errorIcon = painterResource(id = android.R.drawable.ic_delete)
-        )
+    MobileDesignSystemTheme {
+        Column {
+            CardEditText(
+                hint = "normal card - hint",
+                description = "card description"
+            )
+            Spacer(modifier = Modifier.size(10.dp))
+            CardEditText(
+                hint = "disabled card - hint",
+                description = "card description",
+                enabled = false
+            )
+            Spacer(modifier = Modifier.size(10.dp))
+            CardEditText(
+                hint = "required card - hint",
+                description = "card description",
+                enabled = true,
+                required = true
+            )
+            Spacer(modifier = Modifier.size(10.dp))
+            CardEditText(
+                hint = "error card - hint",
+                description = "card description",
+                errorText = "you make a error here",
+                enabled = true,
+                error = true,
+            )
+            Spacer(modifier = Modifier.size(10.dp))
+            CardEditText(
+                hint = "required error card - hint",
+                description = "card description",
+                errorText = "you make a error here",
+                enabled = true,
+                error = true,
+                required = true,
+                errorIcon = painterResource(id = R.drawable.ic_delete)
+            )
+        }
     }
-
 }

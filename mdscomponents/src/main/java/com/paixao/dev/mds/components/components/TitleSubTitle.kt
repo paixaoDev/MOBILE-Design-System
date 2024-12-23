@@ -1,4 +1,4 @@
-package com.paixao.dev.mobile_design_system.components
+package com.paixao.dev.mds.components.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.MaterialTheme
@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
+import com.paixao.dev.mdsfoundation.theme.MobileDesignSystemTheme
 
 enum class TitleSize {
     Small,
@@ -91,8 +92,10 @@ private fun TittleAndSubtitleCompose(
 @Preview
 @Composable
 private fun TitleSubTitlePreview() {
-    TitleSubTitle(
-        title = "Olá Mundo",
-        description = "Como vai amigão?"
-    )
+    MobileDesignSystemTheme {
+        TitleSubTitle(
+            title = "Olá Mundo",
+            description = "Como vai amigão?"
+        )
+    }
 }

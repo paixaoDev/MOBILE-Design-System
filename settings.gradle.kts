@@ -8,12 +8,14 @@ pluginManagement {
             }
         }
         mavenCentral()
+        mavenLocal()
         gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        mavenLocal()
         google()
         mavenCentral()
     }
@@ -21,3 +23,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Mobile Design System"
 include(":app")
+include(":mdscomponents")
+include(":mdsfoundation")
